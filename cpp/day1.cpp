@@ -4,12 +4,12 @@
 #include <vector>
 #include <algorithm>
 
-#include "../utils/utils.h"
+#include "utils.hh"
 
 using namespace std;
 
 int main() {
-  vector<string> lines = open_file("01/day1.txt");
+  vector<string> lines = open_file("../inputs/day1.txt");
   vector<int> entries;
   transform(lines.begin(), lines.end(), back_inserter(entries), [](const string s) {return stoi(s);});
 
@@ -21,8 +21,6 @@ int main() {
   cout << answer << endl;
 
   answer = 0;
-  int sum1 = 0;
-  int sum2 = 0;
   for (int i = 4; i < entries.size(); ++i) {
     sum1 = 0;
     sum2 = 0;

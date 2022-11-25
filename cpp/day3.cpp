@@ -4,7 +4,7 @@
 #include <math.h>
 #include <algorithm>
 
-#include "../utils/utils.h"
+#include "utils.hh"
 
 using namespace std;
 
